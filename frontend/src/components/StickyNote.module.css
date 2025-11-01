@@ -1,0 +1,68 @@
+.note {
+  position: absolute;
+  padding: 15px;
+  width: 220px;
+  border-radius: 12px;
+  cursor: move;
+  color: #f8f9fa;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  word-wrap: break-word;
+}
+
+.note:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+}
+
+.note p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.deleteBtn {
+  border: none;
+  background: #ff4d4d;
+  color: white;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.deleteBtn:hover {
+  background: #e63b3b;
+}
+
+/* 🌙 Dark mode background adjustments */
+.note {
+  background-color: rgba(40, 40, 55, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .note {
+    width: 180px;
+    padding: 12px;
+  }
+
+  .note p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .note {
+    width: 150px;
+    padding: 10px;
+  }
+
+  .deleteBtn {
+    padding: 4px 8px;
+    font-size: 13px;
+  }
+}
